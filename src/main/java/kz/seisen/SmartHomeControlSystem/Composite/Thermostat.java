@@ -1,6 +1,6 @@
 package kz.seisen.SmartHomeControlSystem.Composite;
 
-public class Thermostat implements Device{
+public class Thermostat implements TemperatureDevice{
 
     private double temperature;
 
@@ -30,6 +30,7 @@ public class Thermostat implements Device{
         return temperature;
     }
 
+    @Override
     public void setTemperature(double temperature) {
         this.temperature = temperature;
     }

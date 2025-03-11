@@ -1,6 +1,6 @@
 package kz.seisen.SmartHomeControlSystem.Composite;
 
-public class YandexThermostat implements Device{
+public class YandexThermostat implements TemperatureDevice{
     private String version;
     private String name;
     private double temperature;
@@ -29,5 +29,10 @@ public class YandexThermostat implements Device{
     @Override
     public void getInfo() {
         System.out.println("Yandex " + this.name + "version: " + this.version + " temperature: " + this.temperature);
+    }
+
+    @Override
+    public void setTemperature(double temperature) {
+        this.temperature = temperature;
     }
 }

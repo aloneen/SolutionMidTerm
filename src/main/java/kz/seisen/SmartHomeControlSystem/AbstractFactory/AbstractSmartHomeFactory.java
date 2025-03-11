@@ -2,8 +2,10 @@ package kz.seisen.SmartHomeControlSystem.AbstractFactory;
 
 
 import kz.seisen.SmartHomeControlSystem.Composite.Device;
+import kz.seisen.SmartHomeControlSystem.Composite.TemperatureDevice;
 
-interface AbstractSmartHomeFactory {
+public interface AbstractSmartHomeFactory {
     Device createLight();
-    Device createThermostat();
+    TemperatureDevice createThermostat();
+    Device createDoorLock();
 }
