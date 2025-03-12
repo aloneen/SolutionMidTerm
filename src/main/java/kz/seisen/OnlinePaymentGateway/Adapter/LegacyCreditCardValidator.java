@@ -1,6 +1,8 @@
 package kz.seisen.OnlinePaymentGateway.Adapter;
 
 
+
+// Legacy Validator
 public class LegacyCreditCardValidator {
 
     public boolean validateCard(String cardNumber, String expiryDate, String cvv) {

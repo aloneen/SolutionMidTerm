@@ -27,7 +27,6 @@ public class CoffeeShopDemo {
         scanner.nextLine();
 
 
-
         Coffee coffee;
         switch (coffeeChoice) {
             case 1:
@@ -73,7 +72,7 @@ public class CoffeeShopDemo {
                 case 4:
                     coffee = new ChocolateSyrupDecorator(coffee);
                     break;
-                case 5:
+                case 5: //Order is done.
                     System.out.println("\nFinal Order: " + coffee.getDescription() + " - $" + coffee.getCost());
                     System.out.println("Thank you for your order!");
                     return;

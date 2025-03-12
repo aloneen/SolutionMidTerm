@@ -1,5 +1,7 @@
 package kz.seisen.SmartHomeControlSystem.Composite;
 
+
+// Another Light device but way more advanced
 public class SmartLight implements Device{
     private double power;
     private static int statisticsOfTurnOn;

@@ -2,6 +2,8 @@ package kz.seisen.OnlinePaymentGateway;
 
 import kz.seisen.OnlinePaymentGateway.PaymentMethods.PaymentMethod;
 
+
+
 public class Transaction {
     private PaymentMethod paymentMethod;
     private double amount;
@@ -12,6 +14,8 @@ public class Transaction {
         this.amount = amount;
         this.status = "pending";
     }
+
+
 
     public String process() {
         try {

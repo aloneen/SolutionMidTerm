@@ -3,6 +3,8 @@ package kz.seisen.SmartHomeControlSystem.Composite;
 import java.util.ArrayList;
 import java.util.List;
 
+
+// Composite - (Container) itself.
 public class Room implements Device{
 
     private List<Device> devices = new ArrayList<>();

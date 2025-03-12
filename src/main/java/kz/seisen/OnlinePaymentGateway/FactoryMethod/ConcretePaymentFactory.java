@@ -5,6 +5,9 @@ import kz.seisen.OnlinePaymentGateway.PaymentMethods.CryptoPayment;
 import kz.seisen.OnlinePaymentGateway.PaymentMethods.PayPalPayment;
 import kz.seisen.OnlinePaymentGateway.PaymentMethods.PaymentMethod;
 
+
+
+//our factory method example
 public class ConcretePaymentFactory extends PaymentFactory {
     public PaymentMethod createPaymentMethod(String method, String identifier, double balance) {
         switch (method.toLowerCase()) {

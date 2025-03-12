@@ -3,6 +3,8 @@ package kz.seisen.SmartHomeControlSystem.Decorator;
 
 import kz.seisen.SmartHomeControlSystem.Composite.Device;
 
+
+// Power Saving mode.
 public class PowerSavingModeDecorator extends DeviceDecorator {
 
     public PowerSavingModeDecorator(Device device) {
@@ -11,6 +13,7 @@ public class PowerSavingModeDecorator extends DeviceDecorator {
 
 
 
+    // We monitor the moment of device turning on because that's only moment we can activate power saving mode.
     @Override
     public void turnOn() {
         powerSavingMode();

@@ -1,5 +1,7 @@
 package kz.seisen.SmartHomeControlSystem.Composite;
 
+
+
 public class Light implements Device{
     private double power;
 

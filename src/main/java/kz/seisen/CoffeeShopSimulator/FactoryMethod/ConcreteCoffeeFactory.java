@@ -2,6 +2,8 @@ package kz.seisen.CoffeeShopSimulator.FactoryMethod;
 
 import kz.seisen.CoffeeShopSimulator.Coffies.*;
 
+
+//Concrete implementation of our factory method
 public class ConcreteCoffeeFactory implements CoffeeFactory {
 
 

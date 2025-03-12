@@ -11,11 +11,15 @@ import java.util.List;
 
 
 public class SmartHomeController {
+
+    // Integrates everything
     private Device livingRoomLight;
     private TemperatureDevice livingRoomThermostat;
     private Device frontDoorLock;
     private Room livingRoom;
 
+
+    // in the constructor we identify which type of factory we have to use
     public SmartHomeController(AbstractSmartHomeFactory factory) {
 
         this.livingRoomLight = factory.createLight();
@@ -23,10 +27,10 @@ public class SmartHomeController {
         this.frontDoorLock = factory.createDoorLock();
 
 
-        //Power-saving mode
+        //Power-saving mode. Example of Decorator
         livingRoomLight = new PowerSavingModeDecorator(livingRoomLight);
 
-
+        // Storaging every device in so-called container which is our Composite example.
         this.livingRoom = new Room();
         livingRoom.addDevice(livingRoomLight);
         livingRoom.addDevice(livingRoomThermostat);
@@ -34,6 +38,10 @@ public class SmartHomeController {
     }
 
 
+
+
+    // Basically there is only three method For starting evening, night routines.
+    // Also for getting every piece of info through getHomeStatus.
     public void startEveningRoutine() {
         System.out.println("Starting evening routine...");
         livingRoomLight.turnOn();

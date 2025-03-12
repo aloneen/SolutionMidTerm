@@ -5,6 +5,9 @@ import kz.seisen.OnlinePaymentGateway.Exceptions.InsufficientFundsException;
 import kz.seisen.OnlinePaymentGateway.Exceptions.InvalidPaymentDetailsException;
 import kz.seisen.OnlinePaymentGateway.PaymentMethods.PaymentMethod;
 
+
+
+// Example of Adapter
 public class CreditCardPaymentAdapter implements PaymentMethod {
     private LegacyCreditCardValidator validator;
     private String cardNumber;
@@ -22,6 +25,8 @@ public class CreditCardPaymentAdapter implements PaymentMethod {
 
     public CreditCardPaymentAdapter() {
     }
+
+
 
     @Override
     public String processPayment(double amount) throws InvalidPaymentDetailsException, InsufficientFundsException {

@@ -3,6 +3,7 @@ package kz.seisen.SmartHomeControlSystem.Adapter;
 
 import kz.seisen.SmartHomeControlSystem.Composite.Device;
 
+// Adapter itself.
 public class LegacyDoorLockAdapter implements Device {
     private LegacyDoorLock lock;
 
@@ -14,7 +15,7 @@ public class LegacyDoorLockAdapter implements Device {
 
 
     @Override
-    public void turnOn() {
+    public void turnOn() { // We cover the main logic into our new system logic
         lock.unlock();
     }
     @Override

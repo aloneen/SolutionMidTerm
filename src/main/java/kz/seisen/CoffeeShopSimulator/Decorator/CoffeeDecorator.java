@@ -2,7 +2,7 @@ package kz.seisen.CoffeeShopSimulator.Decorator;
 
 import kz.seisen.CoffeeShopSimulator.Coffies.Coffee;
 
-
+// Decorator itself
 public abstract class CoffeeDecorator implements Coffee {
     protected Coffee decoratedCoffee;
 

@@ -9,7 +9,7 @@ public class WhippedCreamDecorator extends CoffeeDecorator {
 
     @Override
     public double getCost() {
-        return super.getCost() + 1.0;
+        return super.getCost() + 1.0; // Adds 1.0 to the base cost
     }
 
     @Override
