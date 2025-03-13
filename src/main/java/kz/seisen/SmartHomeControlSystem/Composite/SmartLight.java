@@ -23,19 +23,19 @@ public class SmartLight implements Device{
 
     @Override
     public void turnOn() {
-        System.out.println("Light is ON");
+        System.out.println("SmartLight is ON");
         statisticsOfTurnOn++;
     }
 
     @Override
     public void turnOff() {
-        System.out.println("Light is OFF");
+        System.out.println("SmartLight is OFF");
         statisticsOfTurnOff++;
     }
 
     @Override
     public void getInfo() {
-        System.out.println( "Light with power " + power  + "v " );
+        System.out.println( "SmartLight with power " + power  + "v " );
         System.out.println( "Statistics of turning on " + statisticsOfTurnOn );
         System.out.println( "Statistics of turning off " + statisticsOfTurnOff );
     }

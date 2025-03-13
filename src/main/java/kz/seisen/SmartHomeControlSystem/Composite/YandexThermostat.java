@@ -18,17 +18,17 @@ public class YandexThermostat implements TemperatureDevice{
 
     @Override
     public void turnOn() {
-        System.out.println("Yandex " + this.name + " is on");
+        System.out.println("YandexThermostat " + this.name + " is on");
     }
 
     @Override
     public void turnOff() {
-        System.out.println("Yandex " + this.name + " is off");
+        System.out.println("YandexThermostat " + this.name + " is off");
     }
 
     @Override
     public void getInfo() {
-        System.out.println("Yandex " + this.name + "version: " + this.version + " temperature: " + this.temperature);
+        System.out.println("YandexThermostat " + this.name + " version: " + this.version + " temperature: " + this.temperature);
     }
 
     @Override

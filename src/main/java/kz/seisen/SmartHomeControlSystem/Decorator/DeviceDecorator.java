@@ -5,7 +5,7 @@ import kz.seisen.SmartHomeControlSystem.Composite.Device;
 
 
 // Decorator example
-abstract class DeviceDecorator implements Device {
+public abstract class DeviceDecorator implements Device {
 
     protected Device device;
 
