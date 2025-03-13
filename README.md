@@ -1,6 +1,7 @@
 # MIDTERM Projects:
 
 This repository contains three Java-based projects that demonstrate the use of design patterns and object-oriented programming principles:
+In the docs/testing.docx you can see testing and explanation of each project.
 
 1. **Online Payment Gateway**
 2. **Smart Home Control System**
